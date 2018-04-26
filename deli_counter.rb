@@ -1,9 +1,13 @@
 katz_deli = ["scott", "sam"]
 
 def line(katz_deli)
+  if katz_deli == []
+    puts "The line is currently empty."
+  else
   katz_deli.each_with_index do  |value, index|
     puts "#{index + 1}. #{value}"
   end
+end
 end
 
 def take_a_number(katz_deli, name)
