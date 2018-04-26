@@ -1,12 +1,14 @@
 katz_deli = ["scott", "sam"]
 
 def line(katz_deli)
+  line_order = []
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
   katz_deli.each_with_index do  |value, index|
-    puts "The line is currently: #{index + 1}. #{value}"
-  end
+    line_order << "#{index + 1}. #{value}" 
+    end
+    puts "The line is currently: #{line_order.join(" ")}" 
 end
 end
 
